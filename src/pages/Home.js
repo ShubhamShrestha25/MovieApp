@@ -33,7 +33,7 @@ const Home = () => {
         <div className="section mb-3">
           <div className="section__header mb-2">
             <h2>Trending TV Shows</h2>
-            <Link to="/movie">
+            <Link to="/tv">
               <OutlineButton className="small">View more</OutlineButton>
             </Link>
           </div>
@@ -42,7 +42,7 @@ const Home = () => {
         <div className="section mb-3">
           <div className="section__header mb-2">
             <h2>Top Rated TV Shows</h2>
-            <Link to="/movie">
+            <Link to="/tv">
               <OutlineButton className="small">View more</OutlineButton>
             </Link>
           </div>
