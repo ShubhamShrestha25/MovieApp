@@ -61,7 +61,7 @@ const MovieGrid = (props) => {
       };
       response = await tmdbApi.search(props.category, { params });
     }
-    setItems(...items, ...response.results);
+    setItems([...items, ...response.results]);
     setPage(page + 1);
   };
 
@@ -78,7 +78,7 @@ const MovieGrid = (props) => {
       {page < totalPage ? (
         <div className="movie-grid__loadmore">
           <OutlineButton className="small" onClick={loadMore}>
-            Load More
+            Load more
           </OutlineButton>
         </div>
       ) : null}
@@ -100,7 +100,7 @@ const MovieSearch = (props) => {
   useEffect(() => {
     const enterEvent = (e) => {
       e.preventDefault();
-      if (e.keyCode === 13) {
+      if (e.keyCode === 20) {
         goToSearch();
       }
     };
